@@ -1,7 +1,5 @@
 import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
 
-import 'expenses_and_invoice/expenses_and_invoice.dart';
-
 class DashboardDesktopLayout extends StatelessWidget {
   const DashboardDesktopLayout({super.key});
 

@@ -9,3 +9,7 @@ export 'package:personal_finance_management_dashboard/models/drawer_item_model.d
 export 'package:personal_finance_management_dashboard/widgets/drawer/active_and_inactive_item.dart';
 export 'package:personal_finance_management_dashboard/widgets/drawer/drawer_item_list_view.dart';
 export 'package:personal_finance_management_dashboard/widgets/drawer/user_info_list_tile.dart';
+export 'package:personal_finance_management_dashboard/widgets/expenses_and_invoice/expenses_and_invoice.dart';
+export 'package:personal_finance_management_dashboard/widgets/expenses_and_invoice/all_expenses/all_expenses.dart';
+export 'package:personal_finance_management_dashboard/widgets/expenses_and_invoice/quick_invoice/quick_invoice.dart';
+export 'package:personal_finance_management_dashboard/widgets/custom_background_container.dart';
