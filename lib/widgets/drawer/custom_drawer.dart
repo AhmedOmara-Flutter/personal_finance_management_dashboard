@@ -28,7 +28,7 @@ class CustomDrawer extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  Expanded(child: SizedBox()),
+                  Spacer(),
                   InActiveDrawerItem(
                     drawerItemModel: DrawerItemModel(
                       title: 'Setting System',

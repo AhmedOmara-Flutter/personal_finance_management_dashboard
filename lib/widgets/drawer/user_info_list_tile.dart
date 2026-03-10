@@ -15,7 +15,7 @@ class UserInfoListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 28, right: 20, bottom: 8),
+      padding: const EdgeInsets.only(top: 20,left: 28, right: 20, bottom: 8),
       child: Card(
         color: Color(0xffFAFAFA),
         elevation: 0,

@@ -99,8 +99,8 @@ abstract class AppStyles {
 double responsiveFontSize(BuildContext context, {required double fontSize}) {
   double scaleFactor = getScaleFactor(context);
   double responsiveFontSize = fontSize * scaleFactor;
-  double lowerLimit = fontSize * 0.8;
-  double upperLimit = fontSize * 1.2;
+  double lowerLimit = fontSize * 0.7;
+  double upperLimit = fontSize * 1.0;
   return responsiveFontSize.clamp(lowerLimit, upperLimit);
 }
 

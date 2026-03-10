@@ -12,6 +12,9 @@ class Assets {
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  final SvgGenImage arrowRight = const SvgGenImage(
+    'assets/images/arrow-right.svg',
+  );
   final SvgGenImage avatar1 = const SvgGenImage('assets/images/avatar_1.svg');
   final SvgGenImage avatar2 = const SvgGenImage('assets/images/avatar_2.svg');
   final SvgGenImage avatar3 = const SvgGenImage('assets/images/avatar_3.svg');
