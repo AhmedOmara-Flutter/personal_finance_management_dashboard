@@ -7,7 +7,7 @@ class DashboardView extends StatelessWidget {
   Widget build(BuildContext context) {
     return AdaptiveLayout(
       mobileLayout: (BuildContext context) => Scaffold(),
-      tabletLayout: (BuildContext context) => Scaffold(),
+      tabletLayout: (BuildContext context) =>,
       desktopLayout: (BuildContext context) => DashboardDesktopLayout(),
     );
   }
