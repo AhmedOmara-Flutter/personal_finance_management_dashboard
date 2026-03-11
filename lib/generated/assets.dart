@@ -12,6 +12,9 @@ class Assets {
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  final AssetGenImage maskGroup = const AssetGenImage(
+    'assets/images/Mask group.png',
+  );
   final SvgGenImage arrowRight = const SvgGenImage(
     'assets/images/arrow-right.svg',
   );

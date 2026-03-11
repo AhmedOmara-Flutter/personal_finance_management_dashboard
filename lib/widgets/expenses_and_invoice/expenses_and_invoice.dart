@@ -5,14 +5,16 @@ class ExpensesAndInvoice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(left: 32,right: 24,top: 32,bottom: 32),
-      child: Column(
-        children: [
-          AllExpenses(),
-          SizedBox(height:24,),
-          QuickInvoice(),
-        ],
+    return SingleChildScrollView(
+      child: Padding(
+        padding: EdgeInsets.all(15),
+        child: Column(
+          children: [
+            AllExpenses(),
+            SizedBox(height:15,),
+            QuickInvoice(),
+          ],
+        ),
       ),
     );
   }

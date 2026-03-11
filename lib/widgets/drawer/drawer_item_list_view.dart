@@ -32,10 +32,10 @@ class _DrawerItemListViewState extends State<DrawerItemListView> {
   Widget build(BuildContext context) {
     return SliverPadding(
       padding: const EdgeInsets.only(
-        left: 28,
-        right: 20,
-        top: 20,
-        bottom: 20,
+        left: 24,
+        right: 16,
+        top: 16,
+        bottom: 16,
       ),
       sliver: SliverList.separated(
         itemBuilder: (context, index) => GestureDetector(
@@ -51,7 +51,7 @@ class _DrawerItemListViewState extends State<DrawerItemListView> {
             isActive: activeIndex == index,
           ),
         ),
-        separatorBuilder: (context, index) => SizedBox(height: 20),
+        separatorBuilder: (context, index) => SizedBox(height: 16),
         itemCount: DrawerItemListView.drawerItems.length,
       ),
     );

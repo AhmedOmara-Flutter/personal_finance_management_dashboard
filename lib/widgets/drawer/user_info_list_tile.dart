@@ -1,30 +1,22 @@
 import '../../utils/app_imports.dart';
 
 class UserInfoListTile extends StatelessWidget {
-  final String image;
-  final String title;
-  final String subTitle;
-
+  final UserInfoModel userInfoModel;
   const UserInfoListTile({
-    super.key,
-    required this.image,
-    required this.title,
-    required this.subTitle,
+    super.key, required this.userInfoModel,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 20,left: 28, right: 20, bottom: 8),
-      child: Card(
-        color: Color(0xffFAFAFA),
-        elevation: 0,
-        child: ListTile(
-          contentPadding: EdgeInsetsGeometry.symmetric(horizontal: 12,),
-          leading: SvgPicture.asset(Assets.images.avatar3.path),
-          title: Text(title, style: AppStyles.styleSemiBold16(context)),
-          subtitle: Text(subTitle, style: AppStyles.styleRegular12(context)),
-        ),
+    return Card(
+      color: Color(0xffFAFAFA),
+      elevation: 0,
+      child: ListTile(
+        contentPadding: EdgeInsetsGeometry.symmetric(horizontal: 12),
+        horizontalTitleGap: 10,
+        leading: SvgPicture.asset(userInfoModel.image),
+        title: Text(userInfoModel.title, style: AppStyles.styleSemiBold16(context)),
+        subtitle: Text(userInfoModel.subTitle, style: AppStyles.styleRegular12(context)),
       ),
     );
   }

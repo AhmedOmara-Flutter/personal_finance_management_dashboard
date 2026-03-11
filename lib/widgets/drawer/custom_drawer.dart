@@ -1,5 +1,6 @@
 import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
 
+
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
 
@@ -9,11 +10,16 @@ class CustomDrawer extends StatelessWidget {
       color: Colors.white,
       child: CustomScrollView(
         slivers: [
-          SliverToBoxAdapter(
-            child: UserInfoListTile(
-              image: Assets.images.avatar3.path,
-              title: 'Lekan Okeowo',
-              subTitle: 'demo@gmail.com',
+          SliverPadding(
+            padding: EdgeInsets.only(top: 12, left: 20, right: 16, bottom: 4),
+            sliver: SliverToBoxAdapter(
+              child: UserInfoListTile(
+                userInfoModel: UserInfoModel(
+                  image: Assets.images.avatar3.path,
+                  title: 'Lekan Okeowo',
+                  subTitle: 'demo@gmail.com',
+                ),
+              ),
             ),
           ),
           DrawerItemListView(),
@@ -21,10 +27,10 @@ class CustomDrawer extends StatelessWidget {
             hasScrollBody: false,
             child: Padding(
               padding: const EdgeInsets.only(
-                left: 28,
-                right: 20,
-                top: 32,
-                bottom: 48,
+                left: 20,
+                right: 16,
+                top: 28,
+                bottom: 44,
               ),
               child: Column(
                 children: [

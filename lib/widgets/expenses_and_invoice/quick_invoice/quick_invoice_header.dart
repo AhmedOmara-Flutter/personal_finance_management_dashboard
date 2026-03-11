@@ -10,13 +10,13 @@ class QuickInvoiceHeader extends StatelessWidget {
         Text('Quick Invoice', style: AppStyles.styleSemiBold20(context)),
         Spacer(),
         Container(
-          height: 60,
-          width: 60,
+          height: 50,
+          width: 50,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color:Color(0xffFAFAFA),
           ),
-          child: Icon(Icons.add, color: Color(0xff4EB7F2), size: 24,),
+          child: Icon(Icons.add, color: Color(0xff4EB7F2), size: 22,),
         )
       ],
     );

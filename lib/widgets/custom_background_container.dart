@@ -7,7 +7,7 @@ class CustomBackgroundContainer extends StatelessWidget {
   const CustomBackgroundContainer({
     super.key,
     required this.child,
-    this.padding = 20,
+    this.padding = 16,
   });
 
   @override

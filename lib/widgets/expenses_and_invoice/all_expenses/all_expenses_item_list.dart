@@ -51,8 +51,8 @@ class _AllExpensesItemListState extends State<AllExpensesItemList> {
                 });
               },
               child: Container(
-                margin: EdgeInsets.only(right: index == 1 ? 12 : 0),
-                padding: EdgeInsets.only(right: index == 0 ? 12 : 0),
+                margin: EdgeInsets.only(right: index == 1 ? 8 : 0),
+                padding: EdgeInsets.only(right: index == 0 ? 8 : 0),
                 child: AllExpensesItem(allExpensesItemModel: e.value, isActive:index==activeIndex,),
               ),
             ),

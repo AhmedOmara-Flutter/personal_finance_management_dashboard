@@ -12,7 +12,7 @@ class AllExpensesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 16),
       decoration: BoxDecoration(
         color: isActive ? Color(0xff4EB7F2) : Colors.white,
         borderRadius: BorderRadius.circular(12),
@@ -23,15 +23,15 @@ class AllExpensesItem extends StatelessWidget {
         children: [
           AllExpensesItemHeader(
             image: allExpensesItemModel.image, isActive: isActive,),
-          SizedBox(height: 34),
+          SizedBox(height: 30),
           Text(allExpensesItemModel.title,
               style: AppStyles.styleSemiBold16(context).copyWith(
                   color: isActive ? Colors.white : Color(0xFF064061))),
-          SizedBox(height: 8),
+          SizedBox(height: 4),
           Text(allExpensesItemModel.date,
               style: AppStyles.styleRegular14(context).copyWith(
                   color: isActive ? Color(0xffFAFAFA) : Color(0xFFAAAAAA))),
-          SizedBox(height: 16),
+          SizedBox(height: 12),
           Text(allExpensesItemModel.price,
             style: AppStyles.styleSemiBold24(context).copyWith(
                 color: isActive ? Colors.white : Color(0xFF4EB7F2)),)

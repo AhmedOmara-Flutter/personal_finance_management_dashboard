@@ -1,5 +1,4 @@
 import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
-import 'package:personal_finance_management_dashboard/widgets/expenses_and_invoice/quick_invoice/quick_invoice_header.dart';
 
 class QuickInvoice extends StatelessWidget {
   const QuickInvoice({super.key});
@@ -7,12 +6,19 @@ class QuickInvoice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomBackgroundContainer(
-      padding: 24,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           QuickInvoiceHeader(),
-          SizedBox(height: 24),
-
+          SizedBox(height: 20),
+          LatestTransaction(),
+          SizedBox(height: 15),
+          Divider(
+            color: Color(0xffF1F1F1),
+            thickness: 1,
+          ),
+          SizedBox(height: 15),
+          QuickInvoiceForm(),
 
         ],
       ),

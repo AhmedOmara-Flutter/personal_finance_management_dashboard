@@ -6,7 +6,7 @@ class RangeOption extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Container(
-      padding: EdgeInsets.all(12),
+      padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
@@ -15,7 +15,7 @@ class RangeOption extends StatelessWidget {
       child: Row(
         children: [
           Text('Monthly', style: AppStyles.styleMedium16(context)),
-          SizedBox(width: 18),
+          SizedBox(width: 14),
           Icon(Icons.keyboard_arrow_down_sharp, color: Color(0xff064061)),
         ],
       ),

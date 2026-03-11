@@ -13,3 +13,13 @@ export 'package:personal_finance_management_dashboard/widgets/expenses_and_invoi
 export 'package:personal_finance_management_dashboard/widgets/expenses_and_invoice/all_expenses/all_expenses.dart';
 export 'package:personal_finance_management_dashboard/widgets/expenses_and_invoice/quick_invoice/quick_invoice.dart';
 export 'package:personal_finance_management_dashboard/widgets/custom_background_container.dart';
+export 'package:personal_finance_management_dashboard/models/user_info_model.dart';
+export 'package:personal_finance_management_dashboard/widgets/expenses_and_invoice/all_expenses/all_expenses_header.dart';
+export 'package:personal_finance_management_dashboard/widgets/expenses_and_invoice/all_expenses/all_expenses_item_list.dart';
+export 'package:personal_finance_management_dashboard/widgets/expenses_and_invoice/quick_invoice/latest_transaction.dart';
+export 'package:personal_finance_management_dashboard/widgets/expenses_and_invoice/quick_invoice/quick_invoice_form.dart';
+export 'package:personal_finance_management_dashboard/widgets/expenses_and_invoice/quick_invoice/quick_invoice_header.dart';
+export 'package:expandable_page_view/expandable_page_view.dart';
+export 'package:personal_finance_management_dashboard/widgets/my_card_and_transaction/custom_dot_indicator.dart';
+export 'package:personal_finance_management_dashboard/widgets/my_card_and_transaction/my_card.dart';
+export 'package:personal_finance_management_dashboard/widgets/my_card_and_transaction/my_card_page_view.dart';
