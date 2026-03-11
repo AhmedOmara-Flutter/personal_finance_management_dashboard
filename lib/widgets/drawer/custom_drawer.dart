@@ -1,6 +1,5 @@
 import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
 
-
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
 

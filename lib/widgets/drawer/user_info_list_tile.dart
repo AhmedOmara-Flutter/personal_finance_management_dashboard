@@ -1,4 +1,4 @@
-import '../../utils/app_imports.dart';
+import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
 
 class UserInfoListTile extends StatelessWidget {
   final UserInfoModel userInfoModel;

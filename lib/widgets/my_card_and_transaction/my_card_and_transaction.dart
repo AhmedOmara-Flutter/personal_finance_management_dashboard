@@ -1,5 +1,4 @@
-import 'package:personal_finance_management_dashboard/widgets/my_card_and_transaction/my_card_section.dart';
-import '../../utils/app_imports.dart';
+import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
 
 class MyCardAndTransaction extends StatelessWidget {
   const MyCardAndTransaction({super.key});

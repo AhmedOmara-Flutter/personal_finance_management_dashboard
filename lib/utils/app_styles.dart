@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
 
 abstract class AppStyles {
   static TextStyle styleRegular12(BuildContext context) {

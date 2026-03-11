@@ -1,5 +1,4 @@
-import '../../utils/app_imports.dart';
-import 'card_components.dart';
+import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
 
 class MyCard extends StatelessWidget {
   const MyCard({super.key});

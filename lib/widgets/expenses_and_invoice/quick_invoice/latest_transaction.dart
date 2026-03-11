@@ -1,6 +1,4 @@
-import 'package:personal_finance_management_dashboard/widgets/expenses_and_invoice/quick_invoice/latest_transaction_list_view.dart';
-
-import '../../../utils/app_imports.dart';
+import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
 
 class LatestTransaction extends StatelessWidget {
   const LatestTransaction({super.key});

@@ -1,5 +1,4 @@
-
-import '../../utils/app_imports.dart';
+import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
 
 class InActiveDrawerItem extends StatelessWidget {
   const InActiveDrawerItem({

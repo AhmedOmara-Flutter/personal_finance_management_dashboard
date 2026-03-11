@@ -1,5 +1,4 @@
-import '../../utils/app_imports.dart';
-import 'drawer_item.dart';
+import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
 
 class DrawerItemListView extends StatefulWidget {
   const DrawerItemListView({super.key});

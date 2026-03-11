@@ -1,6 +1,4 @@
-import '../../../models/all_expenses_item_model.dart';
-import '../../../utils/app_imports.dart';
-import 'all_expenses_item_header.dart';
+import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
 
 class AllExpensesItem extends StatelessWidget {
   final AllExpensesItemModel allExpensesItemModel;

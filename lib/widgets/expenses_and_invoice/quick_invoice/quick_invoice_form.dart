@@ -1,6 +1,4 @@
-import 'package:personal_finance_management_dashboard/widgets/expenses_and_invoice/quick_invoice/custom_button.dart';
-import 'package:personal_finance_management_dashboard/widgets/expenses_and_invoice/quick_invoice/title_text_field.dart';
-import '../../../utils/app_imports.dart';
+import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
 
 class QuickInvoiceForm extends StatelessWidget {
   const QuickInvoiceForm({super.key});
