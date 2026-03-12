@@ -33,6 +33,7 @@ class TransactionHistoryListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
+      shrinkWrap: true,
       itemCount: transactionItemModel.length,
       separatorBuilder: (context, index) => SizedBox(height: 10),
       itemBuilder: (context, index) =>

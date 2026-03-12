@@ -12,7 +12,7 @@ class MyCardAndTransaction extends StatelessWidget {
           SizedBox(height: 10),
           Divider(color: Color(0xffF1F1F1), thickness: 1),
           SizedBox(height: 10),
-          Expanded(child: TransactionSection()),
+          TransactionSection(),
         ],
       ),
     );

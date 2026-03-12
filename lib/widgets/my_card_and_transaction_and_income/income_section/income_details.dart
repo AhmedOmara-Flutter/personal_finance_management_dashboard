@@ -16,6 +16,8 @@ class IncomeDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
+      shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
       itemBuilder: (context, index) => IncomeItemDetails(incomeItemDetailsModel: items[index]),
       separatorBuilder: (context, index) => SizedBox(height: 8),
       itemCount: items.length,

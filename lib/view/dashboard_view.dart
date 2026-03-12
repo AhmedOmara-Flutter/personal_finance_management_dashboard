@@ -1,4 +1,5 @@
 import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
+import 'package:personal_finance_management_dashboard/widgets/dashboard_tablet_layout.dart';
 
 class DashboardView extends StatelessWidget {
   const DashboardView({super.key});
@@ -7,7 +8,7 @@ class DashboardView extends StatelessWidget {
   Widget build(BuildContext context) {
     return AdaptiveLayout(
       mobileLayout: (BuildContext context) => Scaffold(),
-      tabletLayout: (BuildContext context) =>,
+      tabletLayout: (BuildContext context) => DashboardTabletLayout(),
       desktopLayout: (BuildContext context) => DashboardDesktopLayout(),
     );
   }

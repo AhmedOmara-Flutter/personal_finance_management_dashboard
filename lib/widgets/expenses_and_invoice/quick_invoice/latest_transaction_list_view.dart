@@ -6,13 +6,16 @@ class LatestTransactionListView extends StatelessWidget {
   final List<UserInfoModel> userInfoModel = [
     UserInfoModel(image: Assets.images.avatar1.path,
         title: 'Madrani Andi',
-        subTitle: 'Madraniadi20Madraniadi20@gmail'),
+        subTitle: 'Madraniadi20@gmail'),
     UserInfoModel(image: Assets.images.avatar2.path,
         title: 'Josua Nunito',
         subTitle: 'Josh Nunito@gmail.com'),
     UserInfoModel(image: Assets.images.avatar1.path,
         title: 'Madrani Andi',
         subTitle: 'Madraniadi20@gmail'),
+    UserInfoModel(image: Assets.images.avatar2.path,
+        title: 'Josua Nunito',
+        subTitle: 'Josh Nunito@gmail.com'),
   ];
 
 
