@@ -5,14 +5,14 @@ class ExpensesAndInvoice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          AllExpenses(),
-          SizedBox(height:15),
-          QuickInvoice(),
-        ],
-      ),
+    return Column(
+      children: [
+        SizedBox(height:15),
+        AllExpenses(),
+        SizedBox(height:15),
+        QuickInvoice(),
+        SizedBox(height:15),
+      ],
     );
   }
 }

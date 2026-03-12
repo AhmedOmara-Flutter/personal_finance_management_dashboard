@@ -11,7 +11,7 @@ class CardComponents extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         ListTile(
-          contentPadding: EdgeInsets.only(left: 25, right: 42, top: 12),
+          contentPadding: EdgeInsets.only(left: 25, right: 42, top: 8),
           title: Text(
             'Name card',
             style: AppStyles.styleRegular16(

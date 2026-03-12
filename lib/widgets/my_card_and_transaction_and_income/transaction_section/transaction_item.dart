@@ -8,12 +8,11 @@ class TransactionItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-     margin: EdgeInsets.zero,
       elevation: 0,
       color: Color(0xffFAFAFA),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: ListTile(
-        contentPadding: EdgeInsets.symmetric(horizontal: 10,vertical: 5),
+        contentPadding: EdgeInsets.symmetric(horizontal: 10),
         title: Text(
           transactionItemModel.title,
           style: AppStyles.styleSemiBold16(context),

@@ -1,10 +1,11 @@
 import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
+import 'package:personal_finance_management_dashboard/utils/config_size.dart';
 
 abstract class AppStyles {
   static TextStyle styleRegular12(BuildContext context) {
     return TextStyle(
       color: const Color(0xFFAAAAAA),
-      fontSize: responsiveFontSize(context, fontSize: 11),
+      fontSize: responsiveFontSize(context, fontSize: 10),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w400,
     );
@@ -13,7 +14,7 @@ abstract class AppStyles {
   static TextStyle styleRegular14(BuildContext context) {
     return TextStyle(
       color: const Color(0xFFAAAAAA),
-      fontSize: responsiveFontSize(context, fontSize: 12),
+      fontSize: responsiveFontSize(context, fontSize: 11),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w400,
     );
@@ -22,7 +23,7 @@ abstract class AppStyles {
   static TextStyle styleRegular16(BuildContext context) {
     return TextStyle(
       color: const Color(0xFF064060),
-      fontSize: responsiveFontSize(context, fontSize: 14),
+      fontSize: responsiveFontSize(context, fontSize: 13),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w400,
     );
@@ -31,7 +32,7 @@ abstract class AppStyles {
   static TextStyle styleBold16(BuildContext context) {
     return TextStyle(
       color: const Color(0xFF4EB7F2),
-      fontSize: responsiveFontSize(context, fontSize: 14),
+      fontSize: responsiveFontSize(context, fontSize: 16),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w700,
     );
@@ -40,7 +41,7 @@ abstract class AppStyles {
   static TextStyle styleMedium16(BuildContext context) {
     return TextStyle(
       color: const Color(0xFF064061),
-      fontSize: responsiveFontSize(context, fontSize: 14),
+      fontSize: responsiveFontSize(context, fontSize: 13),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w500,
     );
@@ -49,7 +50,7 @@ abstract class AppStyles {
   static TextStyle styleSemiBold16(BuildContext context) {
     return TextStyle(
       color: const Color(0xFF064061),
-      fontSize: responsiveFontSize(context, fontSize: 14),
+      fontSize: responsiveFontSize(context, fontSize: 13),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
     );
@@ -58,7 +59,7 @@ abstract class AppStyles {
   static TextStyle styleSemiBold18(BuildContext context) {
     return TextStyle(
       color: const Color(0xFFFFFFFF),
-      fontSize: responsiveFontSize(context, fontSize: 16),
+      fontSize: responsiveFontSize(context, fontSize: 13),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
     );
@@ -67,7 +68,7 @@ abstract class AppStyles {
   static TextStyle styleMedium20(BuildContext context) {
     return TextStyle(
       color: const Color(0xFFFFFFFF),
-      fontSize: responsiveFontSize(context, fontSize: 18),
+      fontSize: responsiveFontSize(context, fontSize: 17),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w500,
     );
@@ -76,7 +77,7 @@ abstract class AppStyles {
   static TextStyle styleSemiBold20(BuildContext context) {
     return TextStyle(
       color: const Color(0xFF064061),
-      fontSize: responsiveFontSize(context, fontSize: 18),
+      fontSize: responsiveFontSize(context, fontSize: 17),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
     );
@@ -85,7 +86,7 @@ abstract class AppStyles {
   static TextStyle styleSemiBold24(BuildContext context) {
     return TextStyle(
       color: const Color(0xFF4EB7F2),
-      fontSize: responsiveFontSize(context, fontSize: 20),
+      fontSize: responsiveFontSize(context, fontSize: 19),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
     );
@@ -100,17 +101,17 @@ double responsiveFontSize(BuildContext context, {required double fontSize}) {
   double scaleFactor = getScaleFactor(context);
   double responsiveFontSize = fontSize * scaleFactor;
   double lowerLimit = fontSize * 0.8;
-  double upperLimit = fontSize * 1.1;
+  double upperLimit = fontSize * 1.2;
   return responsiveFontSize.clamp(lowerLimit, upperLimit);
 }
 
 double getScaleFactor(BuildContext context) {
   double width = MediaQuery.sizeOf(context).width;
-  if (width < 800) {
-    return width / 600;
-  } else if (width < 1200) {
+  if (width < ConfigSize.tablet) {
+    return width / 550;
+  } else if (width < ConfigSize.desktop) {
     return width / 900;
   } else {
-    return width / 1400;
+    return width / 1450;
   }
 }

@@ -5,14 +5,28 @@ class DashboardDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Row(
-          children: [
-            Expanded(flex: 10, child: CustomDrawer()),
-            Expanded(flex: 22, child: ExpensesAndInvoice()),
-            Expanded(flex: 14, child: MyCardAndTransactionAndIncome()),
-          ]
-      ),
+    return Row(
+      children: [
+        Expanded(flex: 8, child: CustomDrawer()),
+        SizedBox(width: 15),
+        Expanded(
+          flex: 30,
+          child: CustomScrollView(
+            slivers: [
+              SliverFillRemaining(
+                hasScrollBody: false,
+                child: Row(
+                  children: [
+                    Expanded(flex: 20, child: ExpensesAndInvoice()),
+                    SizedBox(width: 15),
+                    Expanded(flex: 10, child: MyCardAndTransactionAndIncome()),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }

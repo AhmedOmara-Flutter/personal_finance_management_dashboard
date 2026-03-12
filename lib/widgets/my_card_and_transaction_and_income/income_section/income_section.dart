@@ -1,5 +1,6 @@
 import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
-import 'package:personal_finance_management_dashboard/widgets/my_card_and_transaction_and_income/income_section/income_details.dart';
+import 'package:personal_finance_management_dashboard/widgets/my_card_and_transaction_and_income/income_section/income_details_list_view.dart';
+import 'package:personal_finance_management_dashboard/widgets/my_card_and_transaction_and_income/income_section/income_section_body.dart';
 
 class IncomeSection extends StatelessWidget {
   const IncomeSection({super.key});
@@ -10,17 +11,11 @@ class IncomeSection extends StatelessWidget {
       child: Column(
         children: [
           IncomeSectionHeader(),
-          SizedBox(height: 10),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(child: BuildChart()),
-              SizedBox(width: 20),
-              Expanded(child: IncomeDetails()),
-            ],
-          ),
+          SizedBox(height: 20,),
+          IncomeSectionBody(),
         ],
       ),
     );
   }
 }
+

@@ -9,8 +9,37 @@ class IncomeItemDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // return Row(
+    //   children: [
+    //     Container(
+    //       height: 12,
+    //       width: 12,
+    //       decoration: BoxDecoration(
+    //         color: incomeItemDetailsModel.color,
+    //         shape: BoxShape.circle,
+    //       ),
+    //     ),
+    //     SizedBox(width: 15),
+    //     Text(
+    //       incomeItemDetailsModel.title,
+    //       style: AppStyles.styleRegular16(
+    //         context,
+    //       ).copyWith(color: Color(0xff064061)),
+    //     ),
+    //     Spacer(),
+    //     Text(
+    //       incomeItemDetailsModel.value,
+    //       style: AppStyles.styleMedium16(
+    //         context,
+    //       ).copyWith(color: Color(0xff208CC8)),
+    //     )
+    //   ],
+    // );
     return ListTile(
-      contentPadding: EdgeInsets.only(left: 8),
+      dense: true,
+      contentPadding: EdgeInsets.zero,
+      minLeadingWidth: 0,
+      horizontalTitleGap: 10,
       leading: Container(
         height: 12,
         width: 12,
@@ -32,5 +61,7 @@ class IncomeItemDetails extends StatelessWidget {
         ).copyWith(color: Color(0xff208CC8)),
       ),
     );
+
   }
+
 }

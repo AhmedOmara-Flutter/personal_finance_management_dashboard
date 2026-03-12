@@ -3,8 +3,8 @@ import 'package:personal_finance_management_dashboard/widgets/my_card_and_transa
 
 import '../../../utils/app_imports.dart';
 
-class IncomeDetails extends StatelessWidget {
-  IncomeDetails({super.key});
+class IncomeDetailsListView extends StatelessWidget {
+  IncomeDetailsListView({super.key});
 
   final List<IncomeItemDetailsModel> items = [
     IncomeItemDetailsModel(title: 'Design service', value: '%40', color: Color(0xff208CC8)),
@@ -15,12 +15,8 @@ class IncomeDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-      shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
-      itemBuilder: (context, index) => IncomeItemDetails(incomeItemDetailsModel: items[index]),
-      separatorBuilder: (context, index) => SizedBox(height: 8),
-      itemCount: items.length,
+    return Column(
+      children: items.map((item) => IncomeItemDetails(incomeItemDetailsModel: item)).toList(),
     );
   }
 }

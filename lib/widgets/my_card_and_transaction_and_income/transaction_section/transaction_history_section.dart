@@ -9,14 +9,14 @@ class TransactionSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         TransactionHeader(),
-        SizedBox(height: 10),
+        SizedBox(height: 8),
         Text(
           '13 April 2022',
           style: AppStyles.styleMedium16(
             context,
           ).copyWith(color: Color(0xffAAAAAA)),
         ),
-        SizedBox(height: 10),
+        SizedBox(height: 8),
         TransactionHistoryListView(),
       ],
     );

@@ -12,16 +12,17 @@ class AllExpensesItemHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
-          height: 50,
-          width: 50,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: isActive ? Color(0xff5FBEF3) : Color(0xffFAFAFA),
-          ),
-          child: Center(child: SvgPicture.asset(
-            image, color: isActive ? Colors.white : Color(0xff4EB7F2),)),
-        ),
+      Container(
+      width: 50,
+      height: 50,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: isActive ? Color(0xff5FBEF3) : Color(0xffFAFAFA),
+      ),
+      child: Center(child: SvgPicture.asset(
+        image, color: isActive ? Colors.white : Color(0xff4EB7F2),)),
+    ),
+        SizedBox(width: 40,),
         Spacer(),
         Icon(
           Icons.arrow_forward_ios_outlined,

@@ -10,7 +10,7 @@ class MyCardAndTransactionAndIncome extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(flex: 2,child: MyCardAndTransaction()),
+          MyCardAndTransaction(),
           SizedBox(height: 15),
           Expanded(child: IncomeSection()),
         ]

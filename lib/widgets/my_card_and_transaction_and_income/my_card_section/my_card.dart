@@ -6,7 +6,7 @@ class MyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 400 / 195,
+      aspectRatio: 420 / 215,
       child: Container(
         margin: EdgeInsets.only(right: 5),
         decoration: BoxDecoration(
