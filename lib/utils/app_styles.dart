@@ -77,7 +77,7 @@ abstract class AppStyles {
   static TextStyle styleSemiBold20(BuildContext context) {
     return TextStyle(
       color: const Color(0xFF064061),
-      fontSize: responsiveFontSize(context, fontSize: 17),
+      fontSize: responsiveFontSize(context, fontSize: 15),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
     );

@@ -24,9 +24,9 @@ class CardComponents extends StatelessWidget {
           ),
           trailing: SvgPicture.asset(Assets.images.gallery.path),
         ),
-        Spacer(),
+        Expanded(child: SizedBox()),
         Padding(
-          padding: const EdgeInsets.only(right: 20, bottom: 16),
+          padding: const EdgeInsets.only(right: 20, bottom: 14),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
@@ -34,7 +34,7 @@ class CardComponents extends StatelessWidget {
                 '0918 8124 0042 8129',
                 style: AppStyles.styleSemiBold24(
                   context,
-                ).copyWith(color: Colors.white),
+                ).copyWith(color: Colors.white,fontSize:18 ),
               ),
               Text(
                 '12/20 - 124',

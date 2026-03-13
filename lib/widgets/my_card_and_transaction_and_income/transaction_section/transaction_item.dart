@@ -21,7 +21,7 @@ class TransactionItem extends StatelessWidget {
           transactionItemModel.date,
           style: AppStyles.styleRegular16(
             context,
-          ).copyWith(color: Color(0xffAAAAAA)),
+          ).copyWith(color: Color(0xffAAAAAA),fontSize:12 ),
         ),
         trailing: Text(
           transactionItemModel.amount,
