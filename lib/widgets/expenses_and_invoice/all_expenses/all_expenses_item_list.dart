@@ -1,4 +1,5 @@
 import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
+import 'package:personal_finance_management_dashboard/utils/config_size.dart';
 
 class AllExpensesItemList extends StatefulWidget {
   const AllExpensesItemList({super.key});
@@ -35,7 +36,7 @@ class _AllExpensesItemListState extends State<AllExpensesItemList> {
   Widget build(BuildContext context) {
     return MediaQuery
         .sizeOf(context)
-        .width < 440 ? SingleChildScrollView(
+        .width < ConfigSize.errorOnHeadItemForMobile ? SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
           children: allExpensesItemList

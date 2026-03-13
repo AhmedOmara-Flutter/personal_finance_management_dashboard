@@ -32,10 +32,12 @@ class AdaptiveLayout extends StatelessWidget {
     //   },
     // );
     final width = MediaQuery.sizeOf(context).width;
+    print('media query height: ${MediaQuery.sizeOf(context).height}');
+    print('media query width: ${MediaQuery.sizeOf(context).width}');
 
-    if (width < 800) {
+    if (width < ConfigSize.tablet) {
       return mobileLayout(context);
-    } else if (width < 1200) {
+    } else if (width < ConfigSize.desktop) {
       return tabletLayout(context);
     } else {
       return desktopLayout(context);

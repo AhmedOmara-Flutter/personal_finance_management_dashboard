@@ -12,7 +12,7 @@ class DashboardView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      appBar: MediaQuery.sizeOf(context).width < 800
+      appBar: MediaQuery.sizeOf(context).width < ConfigSize.tablet
           ? AppBar(
               backgroundColor: Colors.white,
               scrolledUnderElevation: 0,
