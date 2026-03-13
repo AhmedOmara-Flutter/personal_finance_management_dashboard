@@ -28,6 +28,12 @@ class $AssetsImagesGen {
   final SvgGenImage dashboard = const SvgGenImage(
     'assets/images/dashboard.svg',
   );
+  final AssetGenImage desktop = const AssetGenImage(
+    'assets/images/desktop.png',
+  );
+  final AssetGenImage desktop2 = const AssetGenImage(
+    'assets/images/desktop2.png',
+  );
   final SvgGenImage expenses = const SvgGenImage('assets/images/expenses.svg');
   final SvgGenImage gallery = const SvgGenImage('assets/images/gallery.svg');
   final SvgGenImage income = const SvgGenImage('assets/images/income.svg');
@@ -38,9 +44,15 @@ class $AssetsImagesGen {
   final SvgGenImage myTransctions = const SvgGenImage(
     'assets/images/my_transctions.svg',
   );
+  final AssetGenImage phone = const AssetGenImage('assets/images/phone.png');
+  final AssetGenImage phone2 = const AssetGenImage('assets/images/phone2.png');
   final SvgGenImage settings = const SvgGenImage('assets/images/settings.svg');
   final SvgGenImage statistics = const SvgGenImage(
     'assets/images/statistics.svg',
+  );
+  final AssetGenImage tablet = const AssetGenImage('assets/images/tablet.png');
+  final AssetGenImage tablet2 = const AssetGenImage(
+    'assets/images/tablet2.png',
   );
   final SvgGenImage walletAccount = const SvgGenImage(
     'assets/images/wallet_account.svg',
