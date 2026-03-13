@@ -1,5 +1,4 @@
 import 'package:device_preview/device_preview.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:personal_finance_management_dashboard/utils/app_theme.dart';
 import 'package:personal_finance_management_dashboard/view/dashboard_view.dart';
@@ -7,7 +6,7 @@ import 'package:personal_finance_management_dashboard/view/dashboard_view.dart';
 void main() {
   runApp(
     DevicePreview(
-      enabled: false,
+      enabled: true,
       builder: (context) => MyApp(),
     ),
   );

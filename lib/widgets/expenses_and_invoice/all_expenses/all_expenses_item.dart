@@ -22,17 +22,26 @@ class AllExpensesItem extends StatelessWidget {
           AllExpensesItemHeader(
             image: allExpensesItemModel.image, isActive: isActive,),
           SizedBox(height: 30),
-          Text(allExpensesItemModel.title,
-              style: AppStyles.styleSemiBold16(context).copyWith(
-                  color: isActive ? Colors.white : Color(0xFF064061))),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpensesItemModel.title,
+                style: AppStyles.styleSemiBold16(context).copyWith(
+                    color: isActive ? Colors.white : Color(0xFF064061))),
+          ),
           SizedBox(height: 4),
-          Text(allExpensesItemModel.date,
-              style: AppStyles.styleRegular14(context).copyWith(
-                  color: isActive ? Color(0xffFAFAFA) : Color(0xFFAAAAAA))),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpensesItemModel.date,
+                style: AppStyles.styleRegular14(context).copyWith(
+                    color: isActive ? Color(0xffFAFAFA) : Color(0xFFAAAAAA))),
+          ),
           SizedBox(height: 12),
-          Text(allExpensesItemModel.price,
-            style: AppStyles.styleSemiBold24(context).copyWith(
-                color: isActive ? Colors.white : Color(0xFF4EB7F2)),)
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpensesItemModel.price,
+              style: AppStyles.styleSemiBold24(context).copyWith(
+                  color: isActive ? Colors.white : Color(0xFF4EB7F2)),),
+          )
         ],
       ),
     );

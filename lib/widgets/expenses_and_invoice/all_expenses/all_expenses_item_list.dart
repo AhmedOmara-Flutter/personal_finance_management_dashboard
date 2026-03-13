@@ -33,7 +33,36 @@ class _AllExpensesItemListState extends State<AllExpensesItemList> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return MediaQuery
+        .sizeOf(context)
+        .width < 440 ? SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+          children: allExpensesItemList
+              .asMap()
+              .entries
+              .map((e) {
+            int index = e.key;
+            return IntrinsicWidth(
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    if (index != activeIndex) {
+                      activeIndex = index;
+                    }
+                  });
+                },
+                child: Container(
+                  margin: EdgeInsets.only(right: index == 1 ? 8 : 0),
+                  padding: EdgeInsets.only(right: index == 0 ? 8 : 0),
+                  child: AllExpensesItem(allExpensesItemModel: e.value,
+                    isActive: index == activeIndex,),
+                ),
+              ),
+            );
+          }).toList()
+      ),
+    ) : Row(
         children: allExpensesItemList
             .asMap()
             .entries

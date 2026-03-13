@@ -29,6 +29,7 @@ class DashboardView extends StatelessWidget {
           : null,
       drawer: SizedBox(width: MediaQuery.sizeOf(context).width*0.7, child: CustomDrawer()),
       body: AdaptiveLayout(
+
         mobileLayout: (BuildContext context) => DashboardMobileLayout(),
         tabletLayout: (BuildContext context) => DashboardTabletLayout(),
         desktopLayout: (BuildContext context) => DashboardDesktopLayout(),
