@@ -62,7 +62,8 @@ class _AllExpensesItemListState extends State<AllExpensesItemList> {
             );
           }).toList()
       ),
-    ) : Row(
+    ) :
+    Row(
         children: allExpensesItemList
             .asMap()
             .entries

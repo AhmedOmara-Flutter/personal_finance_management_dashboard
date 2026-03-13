@@ -1,4 +1,5 @@
 import 'package:personal_finance_management_dashboard/utils/app_imports.dart';
+import 'package:personal_finance_management_dashboard/utils/config_size.dart';
 import 'package:personal_finance_management_dashboard/widgets/dashboard_mobile_layout.dart';
 import 'package:personal_finance_management_dashboard/widgets/dashboard_tablet_layout.dart';
 
@@ -29,7 +30,6 @@ class DashboardView extends StatelessWidget {
           : null,
       drawer: SizedBox(width: MediaQuery.sizeOf(context).width*0.7, child: CustomDrawer()),
       body: AdaptiveLayout(
-
         mobileLayout: (BuildContext context) => DashboardMobileLayout(),
         tabletLayout: (BuildContext context) => DashboardTabletLayout(),
         desktopLayout: (BuildContext context) => DashboardDesktopLayout(),

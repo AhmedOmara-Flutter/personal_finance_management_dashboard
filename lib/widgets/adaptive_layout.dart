@@ -13,19 +13,32 @@ class AdaptiveLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        print('max height: ${constraints.maxHeight}');
-        print('max width: ${constraints.maxWidth}');
+    // return LayoutBuilder(
+    //   builder: (context, constraints) {
+    //     print('max height: ${constraints.maxHeight}');
+    //     print('media query height: ${MediaQuery.sizeOf(context).height}');
+    //     print('max width: ${constraints.maxWidth}');
+    //     print('media query width: ${MediaQuery.sizeOf(context).width}');
+    //
+    //
+    //
+    //     if (constraints.maxWidth < 800) {
+    //       return mobileLayout(context);
+    //     } else if (constraints.maxWidth < 1200) {
+    //       return tabletLayout(context);
+    //     } else {
+    //       return desktopLayout(context);
+    //     }
+    //   },
+    // );
+    final width = MediaQuery.sizeOf(context).width;
 
-        if (constraints.maxWidth < ConfigSize.tablet) {
-          return mobileLayout(context);
-        } else if (constraints.maxWidth < ConfigSize.desktop) {
-          return tabletLayout(context);
-        } else {
-          return desktopLayout(context);
-        }
-      },
-    );
+    if (width < 800) {
+      return mobileLayout(context);
+    } else if (width < 1200) {
+      return tabletLayout(context);
+    } else {
+      return desktopLayout(context);
+    }
   }
 }

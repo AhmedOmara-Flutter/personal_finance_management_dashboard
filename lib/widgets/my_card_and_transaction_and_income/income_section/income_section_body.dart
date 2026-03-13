@@ -11,9 +11,9 @@ class IncomeSectionBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MediaQuery
+    return MediaQuery
         .sizeOf(context)
-        .width > ConfigSize.desktop && MediaQuery
+        .width > 1200 && MediaQuery
         .sizeOf(context)
         .width < 1350 ? Expanded(child: Center(child: BuildDetailedChart())) : Row(
               crossAxisAlignment: CrossAxisAlignment.center,
